@@ -1,0 +1,5 @@
+for i,v in pairs(getgc(true)) do
+   if typeof(v) == 'table' and rawget(v, 'equipTime') then
+       rawset(v, 'equipTime', 0.01)
+   end
+end

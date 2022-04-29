@@ -1,0 +1,5 @@
+for i,v in pairs(getgc(true)) do
+   if typeof(v) == 'table' and rawget(v, 'ReloadSpeed') then
+       rawset(v, 'ReloadSpeed', 0.001)
+   end
+end

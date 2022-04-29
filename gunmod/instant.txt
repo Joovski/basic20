@@ -1,0 +1,5 @@
+for i,v in pairs(getgc(true)) do
+   if typeof(v) == 'table' and rawget(v, 'BulletSpeed') then
+       rawset(v, 'BulletSpeed', 9e9)
+   end
+end
